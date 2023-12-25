@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Home
+{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      max-width: 600px;
+      width: 80%;
+      margin: 20px auto; /* Center the container */
+    }
+
+    h1 {
+      color: #3498db;
+      margin-bottom: 20px;
+    }
+
+    .important {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+{% endblock %}
+
+{% block content %}
+  
+  <div class="container">
+    <h1>Hello, And Welcome To Bina's First DB Page!</h1>
+    <p class="important">
+      Welcome to my captivating homepage. Explore the wonders that await you.
+    </p>
+  </div>
+{% endblock %}

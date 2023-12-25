@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Contact
+{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      text-align: center;
+      max-width: 800px;
+      width: 80%;
+      margin: 100px auto; /* Center the container */
+    }
+
+    h1 {
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .important {
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1>Hello, This is the Contact page!</h1>
+    <p class="important">
+      Right now, there isn't anything here. Stay tuned for updates!
+    </p>
+  </div>
+{% endblock %}

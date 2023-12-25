@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  signup
+{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .important {
+      color: #555;
+    }
+
+    form {
+      margin-top: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+{% endblock %}
+
+{% block content %}
+  <h1>SignUP</h1>
+  <p class="important">
+    <form method="post" action="/signup">
+      User name: <input type="text" name="user"><br>
+      Password: <input type="password" name="pwd"><br>
+      <input type="submit" value="Create"><br>
+      If you have an account? <a href="/login">Login Account</a>
+    </form>
+  </p>
+{% endblock %}
